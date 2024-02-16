@@ -10,24 +10,24 @@ GPIO.setup(13, GPIO.OUT)
 
 try:
 	while True:
-		'''depending on key press, turn left/right/forward/back by sending signals 
+		'''depending on key press, turn git left/right/forward/back by sending signals 
 		through GPIO pins (alter accordingly based on our raspberry pi wiring)'''
 		if keyboard.is_pressed('w'):
 			GPIO.output(13, False)
 			GPIO.output(17, True)
 			GPIO.output(27, False)
 			GPIO.output(17, True)
-		elif keyboard.is_pressed('a')
+		elif keyboard.is_pressed('a'):
 			GPIO.output(13, True)
 			GPIO.output(17, False)
 			GPIO.output(27, True)
 			GPIO.output(17, False)
-		elif keyboard.is_pressed('s')
+		elif keyboard.is_pressed('s'):
 			GPIO.output(13, True)
 			GPIO.output(17, False)
 			GPIO.output(27, False)
 			GPIO.output(17, True)
-		elif keyboard.is_pressed('d')
+		elif keyboard.is_pressed('d'):
 			GPIO.output(13, False)
 			GPIO.output(17, True)
 			GPIO.output(27, True)
